@@ -10,7 +10,7 @@ $select->execute();
 $row=$select->fetch(PDO::FETCH_ASSOC);
 
 if($row['email_user']==$email && $row['password_user']==$pass){
- 
+ header("refresh:1;parc/admin.php");
 }else{
 
 }
