@@ -8,5 +8,6 @@ function connexpdo($base){
     }catch(PDOException $e){
       die("connection impossible").$e->getMessage();
     }
+    return $dns;
 } 
 ?>
